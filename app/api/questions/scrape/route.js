@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { scrapeQuestions } from '@/models/Question';
+import { scrapeQuestions } from '@app/models/Question';
 
 export async function POST(request) {
   try {
