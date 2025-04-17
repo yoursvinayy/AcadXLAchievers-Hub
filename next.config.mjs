@@ -14,6 +14,13 @@ const nextConfig = {
       dns: false
     };
     return config;
+  },
+  webpack: (config, { isServer }) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': __dirname,
+    };
+    return config;
   }
 };
 
