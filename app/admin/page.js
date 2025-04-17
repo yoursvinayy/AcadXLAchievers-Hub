@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import AdminDashboard from '../components/AdminDashboard';
-import { getUserRole, UserRoles } from '../models/UserRole';
+import { getUserRole, UserRoles } from '@/models/UserRole';
 import { auth } from '../config/firebase';
 
 export default function AdminPage() {
