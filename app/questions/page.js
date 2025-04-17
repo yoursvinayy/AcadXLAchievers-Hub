@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { addQuestion, getQuestions, scrapeQuestions } from '../models/Question';
+import { addQuestion, getQuestions, scrapeQuestions } from '@/models/Question';
 
 const QuestionManagement = () => {
   const [questions, setQuestions] = useState([]);
