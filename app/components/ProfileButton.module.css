@@ -1,0 +1,152 @@
+.profileContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.profileButton {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--cursor-border);
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profileButton:hover {
+  transform: translateY(-1px);
+  border-color: var(--cursor-accent);
+  background: rgba(88, 166, 255, 0.1);
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profileButton:hover .profileImage {
+  transform: scale(1.1);
+}
+
+.profileInitial {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--cursor-text);
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.01em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profileButton:hover .profileInitial {
+  color: var(--cursor-accent);
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--cursor-bg);
+  border: 1px solid var(--cursor-border);
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  min-width: 240px;
+  z-index: 1000;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.userInfo {
+  padding: 1.25rem;
+  background: rgba(201, 209, 217, 0.02);
+  border-bottom: 1px solid var(--cursor-border);
+  text-align: center;
+}
+
+.email {
+  margin: 0;
+  color: var(--cursor-text);
+  font-size: 0.95rem;
+  word-break: break-all;
+  opacity: 0.9;
+  letter-spacing: -0.01em;
+}
+
+.menuItems {
+  padding: 0.5rem;
+}
+
+.menuItem {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--cursor-text);
+  cursor: pointer;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  letter-spacing: -0.01em;
+  font-family: inherit;
+}
+
+.menuItem:hover {
+  background: rgba(201, 209, 217, 0.04);
+  color: var(--cursor-accent);
+}
+
+.menuItem:last-child {
+  color: #F85149;
+}
+
+.menuItem:last-child:hover {
+  background: rgba(248, 81, 73, 0.08);
+  color: #F85149;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cursor-text-dim);
+  width: 18px;
+  height: 18px;
+  transition: color 0.2s ease;
+}
+
+.menuItem:hover .icon {
+  color: var(--cursor-accent);
+}
+
+.menuItem:last-child .icon {
+  color: #F85149;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

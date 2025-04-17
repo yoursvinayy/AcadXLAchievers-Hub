@@ -1,0 +1,143 @@
+.container {
+  min-height: 100vh;
+  background: var(--background-darker);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.profile {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profileHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+}
+
+.avatarPlaceholder {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #FFFFFF 0%, #D1D1D1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.email {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.points {
+  background: var(--primary-color);
+  padding: 0.75rem 2rem;
+  border-radius: 100px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.menu {
+  background: var(--background-dark);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.2s;
+}
+
+.menuItem:last-child {
+  border-bottom: none;
+}
+
+.menuItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.arrow {
+  margin-left: auto;
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.logoutButton {
+  color: #FF6B6B;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  transition: opacity 0.2s;
+}
+
+.logoutButton:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .avatar, .avatarPlaceholder {
+    width: 120px;
+    height: 120px;
+    font-size: 3rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .email {
+    font-size: 1rem;
+  }
+
+  .points {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+} 
