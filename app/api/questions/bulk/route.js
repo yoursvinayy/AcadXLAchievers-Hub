@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { addQuestion } from '../../../models/Question';
+import { addQuestion } from '../../models/Question';
 
 export async function POST(request) {
   try {
