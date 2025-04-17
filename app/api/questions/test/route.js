@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { addQuestion, getRandomQuestions } from '../../../models/Question';
+import { addQuestion, getRandomQuestions } from '@/models/Question';
 
 export async function GET() {
   try {
