@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { scrapeNCERTQuestions, scrapePreviousYearQuestions, scrapeTopprQuestions } from '../../utils/scraper';
-import { getQuestions, addQuestion } from '../../models/Question';
+import { getQuestions, addQuestion } from '@/models/Question';
 
 export async function GET() {
   try {
